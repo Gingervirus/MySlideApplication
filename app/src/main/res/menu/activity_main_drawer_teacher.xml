@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Student">
+        <menu>
+            <item
+                android:id="@+id/nav_add_student"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Student" />
+            <item
+                android:id="@+id/nav_update_student"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update Student" />
+            <item
+                android:id="@+id/nav_delete_student"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete Student" />
+            <item
+                android:id="@+id/nav_view_all_students"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View All Student" />
+        </menu>
+    </item>
+    <item android:title="Parent">
+        <menu>
+            <item
+                android:id="@+id/nav_add_parent"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Parent" />
+            <item
+                android:id="@+id/nav_update_parent"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update Parent" />
+            <item
+                android:id="@+id/nav_delete_parent"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete Parent" />
+            <item
+                android:id="@+id/nav_view_all_parents"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View All Parent" />
+        </menu>
+    </item>
+    <item android:title="marks">
+        <menu>
+            <item
+                android:id="@+id/nav_add_mark"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Mark" />
+            <item
+                android:id="@+id/nav_update_mark"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update Mark" />
+            <item
+                android:id="@+id/nav_delete_mark"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete Mark" />
+            <item
+                android:id="@+id/nav_view_all_marks"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View All Marks" />
+        </menu>
+    </item>
+    <item android:title="Homework">
+        <menu>
+            <item
+                android:id="@+id/nav_add_homework"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Homework" />
+            <item
+                android:id="@+id/nav_update_homework"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update Homework" />
+            <item
+                android:id="@+id/nav_delete_homework"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete Homework" />
+            <item
+                android:id="@+id/nav_view_all_homework"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View All Homework" />
+        </menu>
+    </item>
+    <item android:title="Detention">
+        <menu>
+            <item
+                android:id="@+id/nav_add_detention"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Student to Detention list" />
+            <item
+                android:id="@+id/nav_update_detention"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update Detention list" />
+            <item
+                android:id="@+id/nav_delete_detention"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete Student" />
+            <item
+                android:id="@+id/nav_view_all_detention"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View Detention list" />
+        </menu>
+    </item>
+    <item android:title="Timetable">
+        <menu>
+            <item
+                android:id="@+id/nav_add_period"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Period" />
+            <item
+                android:id="@+id/nav_update_period"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update Period" />
+            <item
+                android:id="@+id/nav_delete_period"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete Period" />
+            <item
+                android:id="@+id/nav_view_timetable"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View Timetable" />
+        </menu>
+    </item>
+    <item android:title="Absent">
+        <menu>
+            <item
+                android:id="@+id/nav_add_absent"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Student to Absent list" />
+            <item
+                android:id="@+id/nav_update_absent"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update Absent list" />
+            <item
+                android:id="@+id/nav_delete_absent"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete Absent student" />
+            <item
+                android:id="@+id/nav_view_all_absent"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View Absent list" />
+        </menu>
+    </item>
+</menu>
