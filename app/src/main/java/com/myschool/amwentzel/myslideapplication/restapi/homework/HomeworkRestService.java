@@ -10,11 +10,11 @@ import java.util.Set;
 public interface HomeworkRestService {
     Homework getHomeworkDetails() throws Exception;
 
-    void updateHomework();
+    Homework updateHomework() throws Exception;
 
-    void deleteHomework();
+    Homework deleteHomework() throws Exception;
 
-    void createHomework();
+    Homework createHomework() throws Exception;
 
-    Set<Homework> viewAllHomework();
+    Set<Homework> viewAllHomework() throws Exception;
 }

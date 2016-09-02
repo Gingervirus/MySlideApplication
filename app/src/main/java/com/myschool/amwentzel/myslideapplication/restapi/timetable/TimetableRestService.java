@@ -8,13 +8,13 @@ import java.util.Set;
  * Created by amwentzel on 2016/09/02.
  */
 public interface TimetableRestService {
-    Timetable getAbsentDetails() throws Exception;
+    Timetable getTimetableDetails() throws Exception;
 
-    void updateAbsent();
+    Timetable updateTimetable() throws Exception;
 
-    void deleteAbsent();
+    Timetable deleteTimetable() throws Exception;
 
-    void createAbsent();
+    Timetable createTimetable() throws Exception;
 
-    Set<Timetable> viewAllAbsent();
+    Set<Timetable> viewAllTimetable() throws Exception;
 }

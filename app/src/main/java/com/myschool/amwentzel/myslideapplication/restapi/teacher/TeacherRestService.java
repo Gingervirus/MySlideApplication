@@ -8,13 +8,13 @@ import java.util.Set;
  * Created by amwentzel on 2016/09/02.
  */
 public interface TeacherRestService {
-    Teacher getAbsentDetails() throws Exception;
+    Teacher getTeacherDetails() throws Exception;
 
-    void updateAbsent();
+    Teacher updateTeacher() throws Exception;
 
-    void deleteAbsent();
+    Teacher deleteTeacher() throws Exception;
 
-    void createAbsent();
+    Teacher createTeacher() throws Exception;
 
-    Set<Teacher> viewAllAbsent();
+    Set<Teacher> viewAllTeacher() throws Exception;
 }

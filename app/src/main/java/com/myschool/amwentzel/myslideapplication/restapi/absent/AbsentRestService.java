@@ -1,6 +1,8 @@
 package com.myschool.amwentzel.myslideapplication.restapi.absent;
 
 import com.myschool.amwentzel.myslideapplication.domain.Absent;
+import com.myschool.amwentzel.myslideapplication.domain.Parent;
+import com.myschool.amwentzel.myslideapplication.domain.Users;
 
 import java.util.Set;
 
@@ -10,11 +12,11 @@ import java.util.Set;
 public interface AbsentRestService {
     Absent getAbsentDetails() throws Exception;
 
-    void updateAbsent();
+    Absent updateAbsent() throws Exception;
 
-    void deleteAbsent();
+    Absent deleteAbsent() throws Exception;
 
-    void createAbsent();
+    Users createAbsent() throws Exception;
 
-    Set<Absent> viewAllAbsent();
+    Set<Absent> viewAllAbsent() throws Exception;
 }

@@ -10,11 +10,11 @@ import java.util.Set;
 public interface ParentRestService {
     Parent getParentDetails() throws Exception;
 
-    void updateParent();
+    Parent updateParent() throws Exception;
 
-    void deleteParent();
+    Parent deleteParent() throws Exception;
 
-    void createParent();
+    Parent createParent() throws Exception;
 
-    Set<Parent> viewAllParent();
+    Set<Parent> viewAllParent() throws Exception;
 }

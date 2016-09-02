@@ -10,11 +10,11 @@ import java.util.Set;
 public interface StudentRestService {
     Student getStudentDetails() throws Exception;
 
-    void updateStudent();
+    Student updateStudent() throws Exception;
 
-    void deleteStudent();
+    Student deleteStudent() throws Exception;
 
-    void createStudent();
+    Student createStudent() throws Exception;
 
-    Set<Student> viewAllStudent();
+    Set<Student> viewAllStudent() throws Exception;
 }

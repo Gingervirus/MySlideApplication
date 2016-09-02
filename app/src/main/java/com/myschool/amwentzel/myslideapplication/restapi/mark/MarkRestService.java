@@ -10,11 +10,11 @@ import java.util.Set;
 public interface MarkRestService {
     Mark getMarkDetails() throws Exception;
 
-    void updateMark();
+    Mark updateMark() throws Exception;
 
-    void deleteMark();
+    Mark deleteMark() throws Exception;
 
-    void createMark();
+    Mark createMark() throws Exception;
 
-    Set<Mark> viewAllMark();
+    Set<Mark> viewAllMark() throws Exception;
 }

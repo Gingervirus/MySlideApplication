@@ -10,11 +10,11 @@ import java.util.Set;
 public interface DetentionRestService {
     Detention getDetentionDetails() throws Exception;
 
-    void updateDetention();
+    Detention updateDetention() throws Exception;
 
-    void deleteDetention();
+    Detention deleteDetention() throws Exception;
 
-    void createDetention();
+    Detention createDetention() throws Exception;
 
-    Set<Detention> viewAllDetention();
+    Set<Detention> viewAllDetention() throws Exception;
 }

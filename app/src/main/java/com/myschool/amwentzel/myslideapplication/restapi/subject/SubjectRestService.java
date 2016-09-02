@@ -10,11 +10,11 @@ import java.util.Set;
 public interface SubjectRestService {
     Subject getSubjectDetails() throws Exception;
 
-    void updateSubject();
+    Subject updateSubject() throws Exception;
 
-    void deleteSubject();
+    Subject deleteSubject() throws Exception;
 
-    void createSubject();
+    Subject createSubject() throws Exception;
 
-    Set<Subject> viewAllSubject();
+    Set<Subject> viewAllSubject() throws Exception;
 }
