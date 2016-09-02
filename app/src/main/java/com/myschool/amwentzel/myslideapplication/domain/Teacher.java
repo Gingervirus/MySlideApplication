@@ -12,6 +12,8 @@ public class Teacher {
     private String e_mail;
     private String cell;
 
+    private Teacher(){}
+
     public Long getTeacher_id() {
         return teacher_id;
     }

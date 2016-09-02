@@ -17,13 +17,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:text="Search"
-        android:id="@+id/btnPreview" />
+        android:id="@+id/btnSearchStudent" />
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/name"
+        android:id="@+id/StudUpdateName"
         android:hint="Student name" />
     <EditText
         android:layout_width="match_parent"

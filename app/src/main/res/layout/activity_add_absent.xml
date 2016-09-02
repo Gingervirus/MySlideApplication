@@ -5,20 +5,6 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical" >
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/student_nr"
-        android:hint="Student number" />
-
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="Search"
-        android:id="@+id/btnSearch" />
-
 
     <EditText
         android:layout_width="match_parent"

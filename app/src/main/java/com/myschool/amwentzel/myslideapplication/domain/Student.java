@@ -11,6 +11,8 @@ public class Student {
     private String class_nr;
     private String e_mail;
 
+    private Student(){}
+
     public String getClass_nr() {
         return class_nr;
     }
@@ -108,6 +110,7 @@ public class Student {
             return new Student(this);
         }
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
