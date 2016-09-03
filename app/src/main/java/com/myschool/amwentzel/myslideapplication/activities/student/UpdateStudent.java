@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.myschool.amwentzel.myslideapplication.R;
 import com.myschool.amwentzel.myslideapplication.domain.Student;
@@ -25,20 +26,20 @@ public class UpdateStudent extends Fragment {
     EditText txtcell_nr;
     EditText txtclass_nr;
     EditText txtemail;
-    EditText txtpassword;
+
     Button update;
     Button search;
 
-    private boolean populate = false;
     private String student_nr;
     private String firstname;
     private String surname;
     private String cell_nr;
     private String class_nr;
     private String email;
-    private String password;
+
 
     private Student stud;
+    private Student stud2;
 
     @Nullable
     @Override
@@ -50,13 +51,12 @@ public class UpdateStudent extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         txtstudent_nr  = (EditText) view.findViewById(R.id.student_nr);
         txtfirstname  = (EditText) view.findViewById(R.id.StudUpdateName);
-        txtsurname  = (EditText) view.findViewById(R.id.surname);
-        txtcell_nr  = (EditText) view.findViewById(R.id.cellNr);
-        txtclass_nr  = (EditText) view.findViewById(R.id.classNr);
-        txtemail  = (EditText) view.findViewById(R.id.email);
-        txtpassword = (EditText) view.findViewById(R.id.password);
+        txtsurname  = (EditText) view.findViewById(R.id.StudUpdatesurname);
+        txtcell_nr  = (EditText) view.findViewById(R.id.StudUpdateCellNr);
+        txtclass_nr  = (EditText) view.findViewById(R.id.StudUpdateClassnumber);
+        txtemail  = (EditText) view.findViewById(R.id.StudUpdateEmail);
         update = (Button) view.findViewById(R.id.btnUpdate);
-        search = (Button) view.findViewById(R.id.btnSearchStudent);
+        search = (Button) view.findViewById(R.id.btnSearchUpdateStudent);
 
         search.setOnClickListener(new View.OnClickListener() {
 
@@ -67,7 +67,13 @@ public class UpdateStudent extends Fragment {
                         .parent_ID(Long.valueOf(student_nr))
                         .build();
                 new Mytask2().execute();
-
+                try {
+                    Thread.sleep(5000);
+                    setTextboxes();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+               // Toast.makeText(getActivity(), "Result " + stud.getFirst_name() +", " + stud.getSurname(), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -82,8 +88,9 @@ public class UpdateStudent extends Fragment {
                 cell_nr = txtcell_nr.getText().toString();
                 class_nr = txtclass_nr.getText().toString();
                 email = txtemail.getText().toString();
-                password = txtpassword.getText().toString();
-                stud = new Student.Builder()
+
+               stud2 = new Student.Builder()
+                        .copy(stud)
                         .first_name(firstname)
                         .surname(surname)
                         .cellphone_nr(cell_nr)
@@ -113,9 +120,9 @@ public class UpdateStudent extends Fragment {
         protected Void doInBackground(Void... voids) {
 
             try{
-                StudentRestServiceImpl studentRestService = new StudentRestServiceImpl(stud);
-                stud = studentRestService.createStudent();
-                setTextboxes();
+                StudentRestServiceImpl studentRestService = new StudentRestServiceImpl(stud2);
+                stud2 = studentRestService.createStudent();
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

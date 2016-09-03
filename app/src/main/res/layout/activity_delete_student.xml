@@ -17,42 +17,42 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:text="Search"
-        android:id="@+id/btnPreview" />
+        android:id="@+id/btnSearchDeleteStudent" />
 
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/name"
-            android:hint="Student name" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/surname"
-            android:hint="Student Surname" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="top"
-            android:id="@+id/txtDob"
-            android:hint="Student Date Of Birth" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="top"
-            android:id="@+id/txtGender"
-            android:hint="Student gender" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="top"
-            android:id="@+id/txtCell"
-            android:hint="Student phone number" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StudDeleteName"
+        android:hint="Student name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StudDeletesurname"
+        android:hint="Student Surname" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:id="@+id/StudDeleteCellNr"
+        android:hint="Student Cellnumber" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:id="@+id/StudDeleteClassnumber"
+        android:hint="Student Classnumber" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:id="@+id/StudDeleteEmail"
+        android:hint="Student e-mail" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="Delete"
-            android:id="@+id/btnDelete" />/>
-    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Delete"
+        android:id="@+id/btnDelete" />/>
+</LinearLayout>

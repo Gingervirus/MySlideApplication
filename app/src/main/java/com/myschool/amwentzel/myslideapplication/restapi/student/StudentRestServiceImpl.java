@@ -99,8 +99,9 @@ public class StudentRestServiceImpl implements StudentRestService{
 
     @Override
     public Set<Student> viewAllStudent() throws Exception{
+        String url1 = AppUtil.getBaserURI() + "students/";
         Request request = new Request.Builder()
-                .url(url)
+                .url(url1)
                 .get()
                 .build();
 

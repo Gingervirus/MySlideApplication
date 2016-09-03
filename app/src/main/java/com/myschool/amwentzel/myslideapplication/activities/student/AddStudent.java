@@ -26,7 +26,6 @@ public class AddStudent extends Fragment {
     EditText txtcell_nr;
     EditText txtclass_nr;
     EditText txtemail;
-    EditText txtpassword;
     Button addStud;
 
     private String firstname;
@@ -34,7 +33,6 @@ public class AddStudent extends Fragment {
     private String cell_nr;
     private String class_nr;
     private String email;
-    private String password;
 
     private Student stud;
 
@@ -51,7 +49,6 @@ public class AddStudent extends Fragment {
         txtcell_nr = (EditText) view.findViewById(R.id.cellNr);
         txtclass_nr = (EditText) view.findViewById(R.id.classNr);
         txtemail = (EditText) view.findViewById(R.id.email);
-        txtpassword = (EditText) view.findViewById(R.id.password);
         addStud = (Button) view.findViewById(R.id.btnAddStudent);
 
         addStud.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +60,6 @@ public class AddStudent extends Fragment {
                 cell_nr = txtcell_nr.getText().toString();
                 class_nr = txtclass_nr.getText().toString();
                 email = txtemail.getText().toString();
-                password = txtpassword.getText().toString();
                 stud = new Student.Builder()
                         .first_name(firstname)
                         .surname(surname)

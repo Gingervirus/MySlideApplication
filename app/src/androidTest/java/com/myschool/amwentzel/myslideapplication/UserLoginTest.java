@@ -23,14 +23,14 @@ public class UserLoginTest extends AndroidTestCase {
     public void testExistUser() throws Exception {
 
         Users users = new Users.Builder()
-                .user_id(66)
+                .user_id(2)
                 .build();
 
         UsersLoginServiceImpl usersLoginService = new UsersLoginServiceImpl(users);
 
             users = usersLoginService.getAccountDetails();
 
-            Assert.assertEquals("Teacher", users.getRole());
+            Assert.assertEquals("Student", users.getRole());
 
         /*String json = new Gson().toJson(new StudentCredentials(email, password));
 
@@ -57,7 +57,6 @@ public class UserLoginTest extends AndroidTestCase {
     public void testCreateUser() throws Exception {
 
         Users users = new Users.Builder()
-                .user_id(22)
                 .password("12345")
                 .role("Student")
                 .build();

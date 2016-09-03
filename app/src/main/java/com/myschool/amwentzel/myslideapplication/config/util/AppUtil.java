@@ -23,7 +23,7 @@ import okhttp3.Response;
  */
 public class AppUtil {
 
-    private static final String URI = "http://192.168.1.95:8082/";
+    private static final String URI = "http://198.199.72.183:8082/";
 
     public static String getStringLocation(Map<String, String> location) {
         Gson gson = new Gson();

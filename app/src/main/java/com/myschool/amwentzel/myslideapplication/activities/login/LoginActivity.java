@@ -94,9 +94,6 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Authenticating...");
         progressDialog.show();
 
-
-
-        Toast.makeText(getBaseContext(), "Comparing" + users.getPassword() +" with " + _passwordText.getText(), Toast.LENGTH_LONG).show();
         new android.os.Handler().postDelayed(
                 new Runnable() {
                     public void run() {
